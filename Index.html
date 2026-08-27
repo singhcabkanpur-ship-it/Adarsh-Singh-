@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh Cab Kanpur - Best Taxi & Car Rental Service</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header & Navbar */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ffcc00;
+        }
+        .logo h1 {
+            font-size: 24px;
+            color: #ffcc00;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        .hero h2 span {
+            color: #ffcc00;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .btn-call {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn-call:hover {
+            background-color: #fff;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .services h3 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .services h3::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: #ffcc00;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .service-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #1a1a1a;
+            transition: transform 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            border-top-color: #ffcc00;
+        }
+        .service-box h4 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        /* About & Contact Info */
+        .contact-info {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 60px 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .info-col {
+            flex: 1;
+            min-width: 300px;
+            margin: 20px;
+        }
+        .info-col h3 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+        .info-col p {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        .info-col a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d0d0d;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">
+            <h1>Singh Cab <span>Kanpur</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">होम</a></li>
+                <li><a href="#services">हमारी सेवाएं</a></li>
+                <li><a href="#contact">संपर्क करें</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>कानपुर की नंबर 1 टैक्सी सर्विस - <span>सिंह कैब्स</span></h2>
+        <p>केशव नगर, कानपुर से सुरक्षित, किफायती और समय पर आपकी यात्रा।</p>
+        <a href="tel:+917880933668" class="btn-call">📞 अभी बुक करें: 78809-33668</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h3>हमारी मुख्य सेवाएं</h3>
+        <div class="services-grid">
+            <div class="service-box">
+                <h4>लोकल सिटी राइड्स</h4>
+                <p>कानपुर शहर के अंदर कहीं भी आने-जाने के लिए आरामदायक और वातानुकूलित (AC) गाड़ियां उपलब्ध हैं।</p>
+            </div>
+            <div class="service-box">
+                <h4>आउटस्टेशन वन-वे / राउंड ट्रिप</h4>
+                <p>लखनऊ, दिल्ली, आगरा या प्रयागराज जैसी जगहों के लिए बेहद किफायती दामों पर वन-वे या राउंड ट्रिप टैक्सी।</p>
+            </div>
+            <div class="service-box">
+                <h4>एयरपोर्ट / रेलवे स्टेशन पिक-एंड-ड्रॉप</h4>
+                <p>चकेरी एयरपोर्ट या सेंट्रल रेलवे स्टेशन के लिए 24/7 समय पर पिकअप और सुरक्षित ड्रॉप की गारंटी।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-info" id="contact">
+        <div class="info-col">
+            <h3>हमसे संपर्क करें</h3>
+            <p><strong>📍 पता:</strong> केशव नगर, साकेत नगर के पास, कानपुर, उत्तर प्रदेश (208014)</p>
+            <p><strong>📞 मोबाइल नंबर:</strong> <a href="tel:+917880933668">7880933668</a>, <a href="tel:+917652039577">7652039577</a></p>
+            <p><strong>💬 व्हाट्सएप:</strong> <a href="https://wa.me">WhatsApp पर मैसेज करें</a></p>
+            <p><strong>🕒 समय:</strong> 24 घंटे और 7 दिन उपलब्ध (24x7 Service)</p>
+        </div>
+        <div class="info-col">
+            <h3>हमें क्यों चुनें?</h3>
+            <p>✓ अनुभवी और पूरी तरह से वेरिफाइड ड्राइवर्स</p>
+            <p>✓ साफ़-सुथरी और अच्छी तरह से मेंटेन की गईं कारें</p>
+            <p>✓ कोई छुपा हुआ चार्ज नहीं, पारदर्शी किराया</p>
+            <p>✓ कानपुर के स्थानीय रास्तों की गहरी समझ</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Singh Cab Kanpur. सर्वाधिकार सुरक्षित। Design powered by Gemini.</p>
+    </footer>
+
+</body>
+</html>
